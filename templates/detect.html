@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drowsiness Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container detection-page">
+        <header>
+            <h1>Drowsiness Detection</h1>
+            <p class="subtitle">Keep your eyes open!</p>
+        </header>
+        
+        <main class="detection-content">
+            <div class="video-container">
+                <img src="{{ url_for('video_feed') }}" alt="Video Stream" id="videoFeed">
+                <div id="status-overlay" class="status-overlay">
+                    <p id="statusMessage">Starting detection...</p>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <a href="{{ url_for('stop_detection') }}" class="stop-button" id="stopButton">Stop Detection</a>
+            </div>
+            
+            <div class="status-card">
+                <h2>Detection Status</h2>
+                <div class="status-info">
+                    <p>Status: <span id="detectionStatus">Initializing...</span></p>
+                    <p>Message: <span id="detectionMessage">Please wait...</span></p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Drowsiness Detector | <a href="{{ url_for('index') }}">Back to Home</a></p>
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drowsiness Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Drowsiness Detector</h1>
+            <p class="subtitle">Stay awake, stay safe!</p>
+        </header>
+        
+        <main class="home-content">
+            <div class="info-card">
+                <h2>How It Works</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-icon">👁️</div>
+                        <div class="info-text">
+                            <h3>Eye Detection</h3>
+                            <p>Our system monitors your eyes in real-time to detect signs of drowsiness.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">⏰</div>
+                        <div class="info-text">
+                            <h3>Drowsiness Alert</h3>
+                            <p>When your eyes remain closed for too long, we'll alert you immediately.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">🔊</div>
+                        <div class="info-text">
+                            <h3>Alarm System</h3>
+                            <p>A loud alarm will play to wake you up when drowsiness is detected.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">💬</div>
+                        <div class="info-text">
+                            <h3>Wake-up Messages</h3>
+                            <p>Funny and motivational messages will help keep you alert and engaged.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="warning-card">
+                <h2>⚠️ Important Safety Notice</h2>
+                <p>This app is for demonstration purposes only. It should not be relied upon as a safety device while driving or operating heavy machinery. Always prioritize proper rest and safety.</p>
+            </div>
+            
+            <div class="start-button-container">
+                <a href="{{ url_for('detect') }}" class="start-button">Start Detection</a>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Drowsiness Detector | Developed with ❤️</p>
+        </footer>
+    </div>
+</body>
+</html>

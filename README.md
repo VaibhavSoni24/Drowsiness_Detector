@@ -16,9 +16,8 @@ This is a simple Flask web application that uses OpenCV and Haarcascades for fac
 
 ## Setup
 1. Clone the repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run the Flask app: `python app.py`
-4. Access the app on `http://127.0.0.1:5000/`
+2. Run the Flask app: `python app.py`
+3. Access the app on `http://127.0.0.1:5000/`
 
 ## Contributions
 Feel free to fork this repo, make changes, and submit pull requests. All suggestions are welcome!
